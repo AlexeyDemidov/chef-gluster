@@ -21,7 +21,7 @@
 # Server package and servicename
 default['gluster']['server']['package'] = 'glusterfs-server'
 default['gluster']['server']['servicename'] = value_for_platform_family(
-  'debian' => 'glusterfs-server',
+  'debian' => 'glusterd',
   'default' => 'glusterd'
 )
 
