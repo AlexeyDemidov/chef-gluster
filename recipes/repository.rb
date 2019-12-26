@@ -25,6 +25,7 @@ when 'debian'
   debarch=`dpkg --print-architecture`.strip
 
   apt_repository "glusterfs-#{node['gluster']['version']}" do
+    arch "amd64"
     uri "https://download.gluster.org/pub/gluster/glusterfs/#{node['gluster']['version']}/LATEST/Debian/#{node['lsb']['codename']}/#{debarch}/apt"
     distribution node['lsb']['codename']
     components ['main']
