@@ -18,5 +18,5 @@
 # limitations under the License.
 #
 
-default['gluster']['version'] = '6'
+default['gluster']['version'] = '7'
 default['gluster']['repo'] = 'public'
